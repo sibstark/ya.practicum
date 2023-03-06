@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "parcel index.hbs",
+    "start": "parcel index.hbs",
     "build": "parcel build index.hbs"
   },
   "targets": {
@@ -16,6 +16,8 @@
   "license": "ISC",
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "^1.0.9",
-    "parcel": "^2.8.3"
+    "autoprefixer": "^10.4.13",
+    "parcel": "^2.8.3",
+    "postcss-nested": "^6.0.1"
   }
 }
