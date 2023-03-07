@@ -1,0 +1,33 @@
+---
+id: "login"
+title: Login
+stylesheets:
+- ../assets/main.css
+- login.css
+scripts:
+- ../../index.js
+---
+
+{{#extend "main"}}
+    {{#content "content"}}
+        <div class="page login-page">
+            <div class="authorization-container">
+                <h4 class="authorization-container__header">Login</h4>
+                <div class="authorization-container__form">
+                    <form>
+                        <div class="form-control authorization-container__form-control">
+                            <label class="form-control__label">Login</label>
+                            <input name="login" type="text" placeholder="Login" class="form-control__input" />
+                        </div>
+                        <div class="form-control authorization-container__form-control">
+                            <label class="form-control__label">Password</label>
+                            <input name="password" type="password" placeholder="Password" class="form-control__input" />
+                        </div>
+                        <button type="submit" class="button button__blue button_full-width authorization-container__form-control">Sign in</button>
+                        <a class="link link__blue" href="#">Create account</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    {{/content}}
+{{/extend}}
