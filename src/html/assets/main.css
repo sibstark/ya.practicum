@@ -14,11 +14,12 @@ body {
     --color-grey-shadow: #D5D5D5;
     --color-grey-sky: #F8F8F8;
     --color-grey-mountain: #676666;
+    --color-grey-wolf: #EAEAEA;
     --color-black: #000000;
     --color-danger: #FF5757;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, form {
     margin-block-end: 0;
     margin-block-start: 0;
 }
@@ -29,8 +30,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .page {
     background: var(--color-white);
+    min-height: 100%;
     &_centered {
-        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;

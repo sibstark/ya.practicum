@@ -1,9 +1,11 @@
 ---
-id: "registration"
-title: Registration
+id: "profile"
+title: Profile
 stylesheets:
 - ../assets/main.css
 - login.css
+- modal.css
+- upload-photo.css
 scripts:
 - ../../index.js
 ---
@@ -12,9 +14,12 @@ scripts:
     {{#content "content"}}
         <div class="page page_centered">
             <div class="authorization-container">
-                <h4 class="authorization-container__header">Registration</h4>
+                <h4 class="authorization-container__header">Profile</h4>
                 <div class="authorization-container__form">
                     <form>
+                        <div class="form-control authorization-container__form-control">
+                            <img src="../assets/images/profile.svg" class="form-control__image" width="130" height="130" alt="Choose profile picture on click">
+                        </div>
                         <div class="form-control authorization-container__form-control">
                             <label class="form-control__label">First name</label>
                             <input name="first_name" type="text" placeholder="First name" class="form-control__input" />
@@ -22,6 +27,10 @@ scripts:
                         <div class="form-control authorization-container__form-control">
                             <label class="form-control__label">Second name</label>
                             <input name="second_name" type="text" placeholder="Second name" class="form-control__input" />
+                        </div>
+                        <div class="form-control authorization-container__form-control">
+                            <label class="form-control__label">Display name</label>
+                            <input name="display_name" type="text" placeholder="Display name" class="form-control__input" />
                         </div>
                         <div class="form-control authorization-container__form-control">
                             <label class="form-control__label">Login</label>
@@ -36,18 +45,33 @@ scripts:
                             <input name="phone" type="text" placeholder="Phone" class="form-control__input form-control__input_error" />
                             <label class="form-control__error-label">Required</label>
                         </div>
-                        <div class="form-control authorization-container__form-control">
-                            <label class="form-control__label">Password</label>
-                            <input name="password" type="password" placeholder="Password" class="form-control__input form-control__input_error" />
-                            <label class="form-control__error-label">Don't match</label>
-                        </div>
-                        <div class="form-control authorization-container__form-control">
-                            <label class="form-control__label">Confirm password</label>
-                            <input name="confirmPassword" type="password" placeholder="Confirm password" class="form-control__input form-control__input_error" />
-                            <label class="form-control__error-label">Don't match</label>
-                        </div>
-                        <button type="submit" class="button button_blue button_full-width authorization-container__form-control">Sign up</button>
+                        <button type="submit" class="button button_blue button_full-width authorization-container__form-control">Save</button>
                     </form>
+                    <form>
+                        <div class="form-control authorization-container__form-control">
+                            <label class="form-control__label">Old password</label>
+                            <input name="oldPassword" type="password" placeholder="Old password" class="form-control__input form-control__input_error" />
+                            <label class="form-control__error-label">Don't match</label>
+                        </div>
+                        <div class="form-control authorization-container__form-control">
+                            <label class="form-control__label">New password</label>
+                            <input name="newPassword" type="password" placeholder="New password" class="form-control__input form-control__input_error" />
+                            <label class="form-control__error-label">Don't match</label>
+                        </div>
+                        <button type="submit" class="button button_blue button_full-width authorization-container__form-control">Change password</button>
+                        <a class="link link__blue" href="#">Back to chat</a>
+                    </form>
+                </div>
+            </div>
+            <div class="modal modal_active">
+                <div class="modal__content">
+                    <div class="upload-photo">
+                        <h4 class="upload-photo__title">Upload photo</h4>
+                        <div class="upload-photo__content">
+                            <button class="button button_link">Select a file</button>
+                        </div>
+                        <button class="button button_blue button_full-width">Save</button>
+                    </div>
                 </div>
             </div>
         </div>

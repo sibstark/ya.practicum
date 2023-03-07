@@ -1,0 +1,32 @@
+---
+id: "chat"
+title: Chat
+stylesheets:
+- ../assets/main.css
+- login.css
+- chat.css
+scripts:
+- ../../index.js
+---
+
+{{#extend "main"}}
+    {{#content "content"}}
+        <div class="page chat-page">
+            <aside class="chat-sidebar">
+                <div class="chat-sidebar-header">
+                    <div class="chat-header-profile-nav">
+                        <a class="chat-header-profile-nav__link">
+                            <span class="chat-header-profile-nav__link-text">
+                                Profile
+                            </span>
+                            <img src="../assets/images/shevron-right.svg" alt="Referral to profile page on click" />
+                        </a>
+                    </div>
+                    <input class="chat-search-input chat-sidebar-header__search-input" placeholder="Search"></input>
+                </div>
+            </aside>
+            <div class="chat-area">
+            </div>
+        </div>
+    {{/content}}
+{{/extend}}
