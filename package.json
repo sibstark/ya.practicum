@@ -5,6 +5,7 @@
   "scripts": {
     "start": "parcel index.hbs",
     "start:login": "parcel ./src/html/pages/login.hbs --no-cache",
+    "start:registration": "parcel ./src/html/pages/registration.hbs --no-cache",
     "build": "parcel build index.hbs"
   },
   "targets": {

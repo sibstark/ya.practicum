@@ -15,6 +15,7 @@ body {
     --color-grey-sky: #F8F8F8;
     --color-grey-mountain: #676666;
     --color-black: #000000;
+    --color-danger: #FF5757;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,6 +29,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .page {
     background: var(--color-white);
+    &_centered {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 *,
