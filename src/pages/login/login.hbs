@@ -1,0 +1,24 @@
+---
+title: Login
+stylesheets:
+- ../../public/css/main.css
+- ../../public/css/button.css
+- ../../public/css/authorization-container.css
+- ../../public/css/form-control.css
+---
+{{#extend "main"}}
+    {{#content "content"}}
+        <div class="page page_centered">
+            {{#extend "authorizationcontainer" header="Login"}}
+                {{#content "form"}}
+                    <form>
+                        {{> formcontrol externalClasses="authorization-container__form-control" label="Login" name="login" type="text" placeholder="Login" }}
+                        {{> formcontrol externalClasses="authorization-container__form-control" label="Password" name="password" type="password" placeholder="Password" }}
+                        {{> button buttonType="submit" title="Sign in" externalClasses="button_blue button_full-width authorization-container__form-control"}}
+                        {{> link title="Create account" href="#" externalClasses="link__blue"}}
+                    </form>
+                {{/content}}
+            {{/extend}}
+        </div>
+    {{/content}}
+{{/extend}}
