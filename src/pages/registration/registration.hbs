@@ -5,6 +5,8 @@ stylesheets:
 - ../../public/css/button.css
 - ../../public/css/authorization-container.css
 - ../../public/css/form-control.css
+- ../../public/css/upload-photo.css
+- ../../public/css/modal.css
 ---
 
 {{#extend "main"}}
@@ -17,9 +19,9 @@ stylesheets:
                     {{> formcontrol externalClasses="authorization-container__form-control" label="Second name" name="second_name" type="text" placeholder="Second name" }}
                     {{> formcontrol externalClasses="authorization-container__form-control" label="Login" name="login" type="text" placeholder="Login" }}
                     {{> formcontrol externalClasses="authorization-container__form-control" label="Email" name="email" type="text" placeholder="Email" }}
-                    {{> formcontrol externalClasses="authorization-container__form-control" label="Phone" name="phone" type="text" placeholder="Phone" inputClasses="form-control__input_error" error="Required" }}
-                    {{> formcontrol externalClasses="authorization-container__form-control" label="Password" name="password" type="password" placeholder="Password" inputClasses="form-control__input_error" error="Required" }}
-                    {{> formcontrol externalClasses="authorization-container__form-control" label="Confirm password" name="confirmPassword" type="password" placeholder="Confirm password" inputClasses="form-control__input_error" error="Required" }}
+                    {{> formcontrol externalClasses="authorization-container__form-control" label="Phone" name="phone" type="text" placeholder="Phone" inputClasses="form-control__input_error" errorText="Required" }}
+                    {{> formcontrol externalClasses="authorization-container__form-control" label="Password" name="password" type="password" placeholder="Password" inputClasses="form-control__input_error" errorText="Don't match" }}
+                    {{> formcontrol externalClasses="authorization-container__form-control" label="Confirm password" name="confirmPassword" type="password" placeholder="Confirm password" inputClasses="form-control__input_error" errorText="Don't match" }}
                     {{> button buttonType="submit" title="Sign up" externalClasses="button_blue button_full-width authorization-container__form-control"}}
                 </form>
             {{/content}}

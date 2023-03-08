@@ -5,6 +5,8 @@ stylesheets:
 - ../../public/css/button.css
 - ../../public/css/authorization-container.css
 - ../../public/css/form-control.css
+- ../../public/css/upload-photo.css
+- ../../public/css/modal.css
 ---
 {{#extend "main"}}
     {{#content "content"}}
@@ -14,7 +16,7 @@ stylesheets:
                     <form>
                         {{> formcontrol externalClasses="authorization-container__form-control" label="Login" name="login" type="text" placeholder="Login" }}
                         {{> formcontrol externalClasses="authorization-container__form-control" label="Password" name="password" type="password" placeholder="Password" }}
-                        {{> button buttonType="submit" title="Sign in" externalClasses="button_blue button_full-width authorization-container__form-control"}}
+                        {{> button type="submit" title="Sign in" externalClasses="button_blue button_full-width authorization-container__form-control"}}
                         {{> link title="Create account" href="#" externalClasses="link__blue"}}
                     </form>
                 {{/content}}
