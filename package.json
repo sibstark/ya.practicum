@@ -8,6 +8,8 @@
     "start:registration": "parcel ./src/html/pages/registration.hbs --no-cache",
     "start:profile": "parcel ./src/html/pages/profile.hbs --no-cache",
     "start:chat": "parcel ./src/html/pages/chat.hbs --no-cache",
+    "start:404": "parcel ./src/html/pages/404.hbs --no-cache",
+    "start:500": "parcel ./src/html/pages/500.hbs --no-cache",
     "build": "parcel build index.hbs"
   },
   "targets": {

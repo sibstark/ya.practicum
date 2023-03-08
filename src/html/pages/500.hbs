@@ -1,0 +1,21 @@
+---
+id: "500"
+title: 500
+stylesheets:
+- ../assets/main.css
+- 404.css
+scripts:
+- ../../index.js
+---
+
+{{#extend "main"}}
+    {{#content "content"}}
+        <div class="page page_centered">
+            <div class="error-container error-container_danger">
+                <div class="error-container__title">500</div>
+                <div class="error-container__content">Something went wrong</div>
+                <a class="link link__blue" href="#">Back to chat</a>
+            </div>
+        </div>
+    {{/content}}
+{{/extend}}
