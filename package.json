@@ -7,7 +7,7 @@
     "start:login": "parcel ./src/pages/login/login.hbs --no-cache",
     "start:registration": "parcel ./src/pages/registration/registration.hbs --no-cache",
     "start:profile": "parcel ./src/pages/profile/profile.hbs --no-cache",
-    "start:chat": "parcel ./src/html/pages/chat.hbs --no-cache",
+    "start:chat": "parcel ./src/pages/chat/chat.hbs --no-cache",
     "start:404": "parcel ./src/pages/404/404.hbs --no-cache",
     "start:500": "parcel ./src/pages/500/500.hbs --no-cache",
     "build": "parcel build index.hbs"

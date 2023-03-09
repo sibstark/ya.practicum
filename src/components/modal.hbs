@@ -1,5 +1,8 @@
 <div class="modal {{externalClasses}}">
     <div class="modal__content">
+        {{#if @partial-block}}
+            {{> @partial-block }}
+        {{/if}}
         {{#block "body"}}
         {{/block}}
     </div>

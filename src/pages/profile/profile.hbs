@@ -36,17 +36,15 @@ stylesheets:
                 </form>
             {{/content}}
         {{/extend}}
-        {{#extend "modal" externalClasses="modal_active"}}
-            {{#content "body"}}
-                <div class="upload-photo">
-                    <h4 class="upload-photo__title">Upload photo</h4>
-                    <div class="upload-photo__content">
-                        {{> button title="Select a file" externalClasses="button_link"}}
-                    </div>
-                    {{> button title="Save" externalClasses="button_blue button_full-width"}}
+        {{#> modal externalClasses="modal_active"}}
+            <div class="upload-photo">
+                <h4 class="upload-photo__title">Upload photo</h4>
+                <div class="upload-photo__content">
+                    {{> button title="Select a file" externalClasses="button_link"}}
                 </div>
-            {{/content}}
-        {{/extend}}
+                {{> button title="Save" externalClasses="button_blue button_full-width"}}
+            </div>
+        {{/modal}}
         </div>
     {{/content}}
 {{/extend}}
